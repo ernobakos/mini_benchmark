@@ -5,7 +5,7 @@ class TestException(Exception):
         self.msg = msg
 
     def __repr__(self) -> str:
-        return f"TestException({self.msg})"
+        return "TestException({})".format(self.msg)
 
 def my_test(iterations):
     a = dict()
