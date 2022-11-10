@@ -24,3 +24,7 @@ def my_test(iterations):
     result = list(filtered)
     if not len(result) == (iterations/2 -1):
         raise TestException("Count error")
+
+def my_testmp(it, iterations):
+    for i in it:
+        my_test(iterations)
