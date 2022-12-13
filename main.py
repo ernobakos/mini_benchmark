@@ -1,3 +1,5 @@
+import sys
+
 total = 1000
 iterations = 200
 
@@ -12,5 +14,6 @@ def test2():
     print("{} Thread: Time taken:".format(cpus) , mptest.testmp(cpus, total, iterations))
 
 if __name__ == "__main__":
+    print(f"Using python:{sys.version}")
     test1()
     test2()
